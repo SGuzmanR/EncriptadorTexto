@@ -344,6 +344,21 @@ header {
         gap: 1.4rem;
     }
 
+    #principal {
+        justify-content: flex-start;
+        height: auto;
+        padding-bottom: 1.2rem;
+    }
+
+    #writeText {
+        height: 300px;
+        font-size: 1.6rem;
+    }
+
+    #leftMain {
+        height: auto;
+    }
+
     #btns {
         flex-direction: row;
         gap: .8rem;
