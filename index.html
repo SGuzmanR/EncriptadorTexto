@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Encriptador de Texto | SGuzmanR</title>
+</head>
+<body>
+    <header>
+        <img id="logoHeader" src="assets/images/Logo.png" alt="Logo Alura">
+        <div id="socials">
+            <p id="textSocials">SGuzmanR 2022 |</p>
+            <a href="https://www.linkedin.com/in/sergio-andres-g-a56a3a246" target="_blank"><img src="assets/images/Linkedin.png" alt="Linkedin" class="icon-socials"></a>
+            <a href="https://github.com/SGuzmanR" target="_blank"><img src="assets/images/GitHub.png" alt="Github"class="icon-socials" style="width: 1.4rem;"></a>
+        </div>
+    </header>
+    <div id="main">
+        <div class="leftMain">
+            <div id="principal">
+                <textarea id="writeText" name="writeText" placeholder="Ingrese el texto aqui"></textarea>
+                <div id="mainExclamacion">
+                    <img id="logoExclamacion" src="assets/images/ExclamationLogo.png" alt="Logo Exclamacion">
+                    <p id="textExclamacion">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div id="btns">
+                    <button id="btn-enc" class="btn">Encriptar</button>
+                    <button id="btn-des" class="btn">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="rightMain">
+            <div id="panels">
+                <div id="off" class="part1">
+                    <img id="muñeco" src="assets/images/Muñeco.png" alt="Muñeco">
+                    <p id="text1">Ningún mensaje fue encontrado</p>
+                    <p id="text2">Ingresa el texto que desees encriptar o desencriptar.</p>   
+                </div>
+                <div id="on" class="part2">
+                    <textarea id="showResult" name="showResult" readonly></textarea>
+                    <button id="btn-copiar">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Script Code-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
