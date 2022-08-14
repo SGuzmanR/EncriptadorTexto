@@ -236,7 +236,7 @@ header {
 }
 
 #showResult {
-    width: 70%;
+    width: 350px;
     height: 580px;
     font-size: var(--bigger-font-size);
 }
@@ -325,7 +325,7 @@ header {
     }
 
     #showResult {
-        width: 80%;
+        width: 280px;
         height: 420px;
     }
 
