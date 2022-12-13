@@ -1,3 +1,7 @@
-# EncriptadorTexto
+<h1 align="center">ENCRIPTADOR DE TEXTO</h1>
 
-Here's the link to the page: <a href="https://sguzmanr.github.io/EncriptadorTexto/">Encriptador/Desencriptador de texto</a>
+<h2>Descripcion del proyecto</h2>
+<p></p>
+
+<h2>Ejecutar el proyecto</h2>
+<p>Para abrir el Encriptador de Texto, puedes verlo ingresando <a href="https://sguzmanr.github.io/EncriptadorTexto/">AQUI</a></p>
