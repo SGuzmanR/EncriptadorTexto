@@ -4,4 +4,4 @@
 <p></p>
 
 <h2>Ejecutar el proyecto</h2>
-<p>Para abrir el Encriptador de Texto, puedes verlo ingresando <a href="https://sguzmanr.github.io/EncriptadorTexto/">AQUI</a></p>
+<p>Para abrir el Encriptador de Texto, puedes verlo ingresando <a href="https://sguzmanr.github.io/EncriptadorTexto/" target="_blank">AQUI</a></p>
