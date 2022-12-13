@@ -9,41 +9,47 @@
 </head>
 <body>
     <header>
-        <img id="logoHeader" src="assets/images/Logo.png" alt="Logo Alura">
-        <div id="socials">
-            <p id="textSocials">SGuzmanR 2022 |</p>
-            <a href="https://www.linkedin.com/in/sergio-andres-g-a56a3a246" target="_blank"><img src="assets/images/Linkedin.png" alt="Linkedin" class="icon-socials"></a>
-            <a href="https://github.com/SGuzmanR" target="_blank"><img src="assets/images/GitHub.png" alt="Github"class="icon-socials" style="width: 1.4rem;"></a>
-        </div>
+        <nav class="section">
+            <a href="index.html"><img id="nav-logo" src="assets/img/Logo.png" alt="Logo Alura"></a>
+        </nav>
     </header>
-    <div id="main">
-        <div class="leftMain">
-            <div id="principal">
-                <textarea id="writeText" name="writeText" placeholder="Ingrese el texto aqui"></textarea>
-                <div id="mainExclamacion">
-                    <img id="logoExclamacion" src="assets/images/ExclamationLogo.png" alt="Logo Exclamacion">
-                    <p id="textExclamacion">Solo letras minúsculas y sin acentos</p>
+
+    <main>
+        <section id="main-left">
+            <div class="panels section">
+                <textarea id="write-text" name="writeText" placeholder="Ingrese el texto aqui"></textarea>
+                <div id="exclamacion-main">
+                    <img class="exclamacion-img" src="assets/img/ExclamationLogo.png" alt="Logo Exclamacion">
+                    <p class="exclamacion-text">Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div id="btns">
                     <button id="btn-enc" class="btn">Encriptar</button>
                     <button id="btn-des" class="btn">Desencriptar</button>
                 </div>
             </div>
-        </div>
-        <div class="rightMain">
-            <div id="panels">
-                <div id="off" class="part1">
-                    <img id="muñeco" src="assets/images/Muñeco.png" alt="Muñeco">
-                    <p id="text1">Ningún mensaje fue encontrado</p>
-                    <p id="text2">Ingresa el texto que desees encriptar o desencriptar.</p>   
+        </section>
+        <section id="main-right">
+            <div id="rect" class="panels section">
+                <div id="off" class="part">
+                    <img id="muñeco" src="assets/img/Muñeco.png" alt="Muñeco">
+                    <p class="text1">Ningún mensaje fue encontrado</p>
+                    <p class="text2">Ingresa el texto que desees encriptar o desencriptar.</p>   
                 </div>
-                <div id="on" class="part2">
-                    <textarea id="showResult" name="showResult" readonly></textarea>
-                    <button id="btn-copiar">Copiar</button>
+                <div id="on" class="part">
+                    <textarea id="show-result" name="show result" readonly></textarea>
+                    <button id="btn-copiar" class="btn">Copiar</button>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Developed by SGuzmanR</p>
+        <div id="socials">
+            <a class="socials-link" href="#"><img src="assets/img/GitHub.png" alt="Github" style="width: 1.5rem;"></a>
+            <a class="socials-link" href="#"><img src="assets/img/Linkedin.png" alt="Linkedin" style="width: 1.8rem;"></a>
         </div>
-    </div>
+    </footer>
 
     <!--Script Code-->
     <script src="assets/js/main.js"></script>

@@ -1,11 +1,10 @@
-let readText = document.querySelector("#writeText");
-let resultText = document.querySelector("#showResult");
-let btnEnc = document.querySelector("#btn-enc");
-let btnDes = document.querySelector("#btn-des");
-let btnCopiar = document.querySelector("#btn-copiar");
+let readText = document.getElementById("write-text");
+let resultText = document.getElementById("show-result");
+let btnEnc = document.getElementById("btn-enc");
+let btnDes = document.getElementById("btn-des");
+let btnCopiar = document.getElementById("btn-copiar");
 
 
-//Funcion para cambiar display del panel
 function changePanel(i){
     switch(i){
         case 0: document.getElementById("on").style.display = "none";
@@ -17,7 +16,6 @@ function changePanel(i){
     }
 }
 
-//Validar texto en mayusculas o caracter especiales
 function textValidation(){
     let processText = readText.value;
     let validation = "áéíóúäëïöüQWERTYUIOPASDFGHJKLÑZXCVBNMÁÉÍÓÚÄËÏÖÜ";
@@ -45,7 +43,6 @@ function textValidation(){
     }
 }
 
-//Funcion para encriptar texto ingresado
 function encriptar(){
     changePanel(1);
     textValidation();
@@ -63,7 +60,6 @@ function encriptar(){
     resultText.value = encriptar;
 }
 
-//Funcion para desencriptar texto ingresado
 function desencriptar(){
     changePanel(1);
     textValidation();
@@ -81,9 +77,8 @@ function desencriptar(){
     resultText.value = desencriptar;
 }
 
-//Funcion para copiar texto
 function copiarTexto(){
-    let copiarTexto = document.querySelector("#showResult");
+    let copiarTexto = document.getElementById("show-result");
     copiarTexto.select();
     navigator.clipboard.writeText(copiarTexto.value);
     readText.value = "";
