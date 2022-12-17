@@ -93,7 +93,8 @@ main {
 #write-text {
     width: 100%;
     height: 28rem;
-    padding: 0 1.4rem;
+    padding: 0 1rem;
+    padding-top: 1rem;
     font-size: 1.2em;
     color: var(--color-white);
     font-family: var(--body-font);
@@ -116,27 +117,23 @@ main {
 }
 
 .exclamacion-text {
-    font-size: .8em;
+    font-size: .7em;
 }
 
 #btns {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .btn {
-    width: 8rem;
-    height: 2.3rem;
+    width: 12rem;
+    height: 3rem;
     border-radius: .6rem;
     cursor: pointer;
     transform: .3s all;
     font-family: var(--body-font);
-}
-
-.btn:hover {
-    transform: scale(1.05);
 }
 
 #btn-enc {
@@ -163,7 +160,7 @@ main {
 }
 
 #muñeco {
-    width: 14rem;
+    width: 12rem;
 }
 
 .text1 {
@@ -237,10 +234,6 @@ footer p {
     transition: .3s all;
 }
 
-.socials-link:hover {
-    transform: scale(1.1);
-}
-
 
 /*--SCROLL BAR--*/
 ::-webkit-scrollbar {
@@ -264,6 +257,10 @@ footer p {
         padding: 0 3rem;
     }
 
+    #btns {
+        flex-direction: row;
+    }
+
     .btn {
         width: 10rem;
         height: 2.8rem;
@@ -277,9 +274,11 @@ footer p {
 @media screen and (min-width: 1024px) {
     header {
         padding: .9rem 0;
+        height: 10vh;
     }
 
     main {
+        height: 80vh;
         flex-direction: row;
     }
 
@@ -289,7 +288,7 @@ footer p {
     }
 
     #rect {
-        height: 32.5rem;
+        height: 30rem;
     }
 
     #show-result {
@@ -299,12 +298,18 @@ footer p {
 
     footer {
         padding: 2rem 0;
+        height: 10vh;
     }
 }
 
 @media screen and (min-width: 1440px) {
     header {
         padding: 1.2rem 0;
+        height: 10vh;
+    }
+
+    main {
+        height: 80vh;
     }
 
     #write-text {
@@ -313,11 +318,17 @@ footer p {
     }
 
     #rect {
-        height: 35rem;
+        height: 40rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     #show-result {
         height: 27rem;
         font-size: 1.3em;
+    }
+
+    footer {
+        height: 10vh;
     }
 }
